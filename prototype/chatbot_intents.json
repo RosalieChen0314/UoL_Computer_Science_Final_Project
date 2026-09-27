@@ -1,0 +1,85 @@
+{
+    "intents": [
+        {
+            "tag": "greeting",
+            "patterns": ["hi", "hello", "hey"],
+            "responses": [
+                "Hello there! You can ask me about any stock you are interested in.",
+                "Hi, are you interested in investing in stock markets?"
+            ]
+        },
+        {
+            "tag": "prediction_open",
+            "patterns": ["open", "opening", "opening price", "open price"],
+            "responses": [
+                "The next opening price of {stock} is predicted to be around {Open:.2f}",
+                "The predicted next opening price for {stock} is {Open:.2f}.",
+                "{stock}'s next opening price is estimated to be around {Open:.2f}."
+            ]
+        },
+        {
+            "tag": "prediction_close",
+            "patterns": ["close", "closing", "closing price", "close price", "price", "value"],
+            "responses": [
+                "The next closing price of {stock} is predicted to be around {Close:.2f}.",
+                "The predicted next closing price for {stock} is {Close:.2f}.",
+                "{stock}'s next closing price is estimated to be around {Close:.2f}."
+            ]
+        },
+        {
+            "tag": "prediction_high",
+            "patterns": ["high", "highest", "high price", "highest price"],
+            "responses": [
+                "The next highest price of {stock} is predicted to be around {High:.2f}.",
+                "The predicted next high for {stock} is {High:.2f}.",
+                "{stock}'s next high is estimated to be around {High:.2f}."
+            ]
+        },
+        {
+            "tag": "prediction_low",
+            "patterns": ["low", "lowest", "low price", "lowest price"],
+            "responses": [
+                "The next lowest price of {stock} is predicted to be around {Low:.2f}.",
+                "The predicted next low for {stock} is {Low:.2f}.",
+                "{stock}'s next low is estimated to be around {Low:.2f}."
+            ]
+        },
+        {
+            "tag": "prediction_volume",
+            "patterns": ["volume", "trading volume", "amount"],
+            "responses": [
+                "The next trading volume of {stock} is predicted to be around {Volume:,.0f}.",
+                "The predicted trading volume for {stock} is {Volume:,.0f}.",
+                "{stock}'s next trading volume is estimated to be around {Volume:,.0f}."
+            ]
+        },
+        {
+            "tag": "prediction_all",
+            "patterns": ["predict", "prediction", "forecast", "all", "overview"],
+            "responses": [
+                "Predictions for {stock}:\nOpening price: {Open:.2f}\nHighest price: {High:.2f}\nLowest price: {Low:.2f}\nClosing price: {Close:.2f}\nVolume: {Volume:,.0f}",
+                "Forecast for {stock}:\nOpen: {Open:.2f}\nHigh: {High:.2f}\nLow: {Low:.2f}\nClose: {Close:.2f}\nVolume: {Volume:,.0f}"
+            ]
+        },
+        {
+            "tag": "action",
+            "patterns": ["action", "what to do", "what should i do", "recommend", "recommendation", "suggest",
+                "suggestion", "buy", "sell", "hold", "trade", "trading action"],
+            "responses": [
+                "I suggest that you can {action} {stock}.",
+                "My suggested action for {stock} is {action}.",
+                "Based on my predictions and trainings, the action recommended for {stock} is {action}."
+            ]
+        },
+        {
+            "tag": "farewell",
+            "patterns": ["bye", "goodbye", "see you", "take care"],
+            "responses": [
+                "Goodbye.",
+                "Have a good time!",
+                "Thanks for chatting!",
+                "Have a nice day!"
+            ]
+        }
+    ]
+}

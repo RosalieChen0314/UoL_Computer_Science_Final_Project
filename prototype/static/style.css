@@ -1,0 +1,64 @@
+body {
+    background: rgb(238, 238, 238);
+    text-align:center;
+}
+
+h1 {
+    text-align: center;
+}
+
+.chat-container {
+    width: 500px;
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow:0 3px 15px rgba(0, 0, 0, 0.15);
+}
+#chat-box {
+    height: 250px;
+    overflow-y: auto; /* scrolling (vertical) */
+    border: 1px solid white;
+    padding: 15px;
+    margin-bottom: 15px;
+    display: flex;          
+    flex-direction: column;     /* display vertically */
+    gap: 5px;   /* separate messages */
+}
+
+.message {
+    padding: 10px 15px;
+    border-radius: 10px;
+    max-width: 75%;  /* width of chat area */
+}
+
+.user-message {
+    align-self: flex-end; /* align user message to the right (flex element) */
+    background: #dcf9e7;
+    text-align: right;
+}
+
+.bot-message {
+    align-self: flex-start; /* align bot message to the left (flex element) */
+    background: #eeeeee;
+    text-align: left;
+}
+
+.input-area {
+    display: flex; /* flex container */
+    gap: 10px; /* separate input and button */
+}
+
+#user-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+#send-botton {
+    font-size: 12px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
